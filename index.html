@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      method="post"
+      action="https://secure.wayforpay.com/pay"
+      accept-charset="utf-8"
+    >
+      <input name="merchantAccount" value="test_merch_n1" />
+      <input name="merchantDomainName" value="www.market.ua" />
+      <input name="orderReference" value="D1H1695480743" />
+      <input name="orderDate" value="1415379863" />
+      <input name="amount" value="4" />
+      <input name="currency" value="UAH" />
+      <input name="productName[]" value="test1" />
+      <input name="productPrice[]" value="4" />
+      <input name="productCount[]" value="1" />
+      <input
+        name="merchantSignature"
+        value="2e47691fb504277e7e538c404bcd7777"
+      />
+      <input type="submit" value="Test" />
+    </form>
+  </body>
+</html>
